@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using BehTree.DataStorage;
 using Cysharp.Threading.Tasks;
+using Jrpg.DataStorage;
 using Zenject;
 
-namespace BehTree.Interfaces
+namespace Jrpg.Interfaces
 {
     public interface ISpawner <T, K> where T : DataStorageBase<K> where K : IStorageable
     {

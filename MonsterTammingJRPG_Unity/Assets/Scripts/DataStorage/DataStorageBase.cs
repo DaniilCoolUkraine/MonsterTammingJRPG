@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using BehTree.Interfaces;
+using Jrpg.Interfaces;
 using UnityEngine;
 
-namespace BehTree.DataStorage
+namespace Jrpg.DataStorage
 {
     public abstract class DataStorageBase<T> : ScriptableObject where T : IStorageable
     {

@@ -1,4 +1,4 @@
-﻿namespace BehTree.Core.EventBus
+﻿namespace Jrpg.Core.EventBus
 {
     public interface IEvent
     {

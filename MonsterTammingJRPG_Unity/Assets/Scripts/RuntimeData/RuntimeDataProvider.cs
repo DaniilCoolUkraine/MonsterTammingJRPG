@@ -1,9 +1,9 @@
-﻿using BehTree.DataStorage;
-using BehTree.Interfaces;
+﻿using Jrpg.DataStorage;
+using Jrpg.Interfaces;
 using UnityEngine;
 using Zenject;
 
-namespace BehTree.RuntimeData
+namespace Jrpg.RuntimeData
 {
     public class RuntimeDataProvider : MonoBehaviour, IRuntimeDataProvider
     {

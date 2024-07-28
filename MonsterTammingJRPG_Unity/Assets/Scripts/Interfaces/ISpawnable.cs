@@ -1,6 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 
-namespace BehTree.Interfaces
+namespace Jrpg.Interfaces
 {
     public interface ISpawnable
     {

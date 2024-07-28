@@ -1,9 +1,9 @@
-﻿using BehTree.Interfaces;
-using BehTree.RuntimeData;
+﻿using Jrpg.Interfaces;
+using Jrpg.RuntimeData;
 using UnityEngine;
 using Zenject;
 
-namespace BehTree.Installers.MonoInstallers
+namespace Jrpg.Installers.MonoInstallers
 {
     public class RuntimeDataInstaller : MonoInstaller
     {

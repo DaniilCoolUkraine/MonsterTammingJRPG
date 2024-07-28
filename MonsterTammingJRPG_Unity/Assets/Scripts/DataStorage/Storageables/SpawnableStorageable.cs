@@ -1,9 +1,9 @@
 ﻿using System;
-using BehTree.Interfaces;
-using BehTree.Spawnable;
+using Jrpg.Interfaces;
+using Jrpg.Spawnable;
 using UnityEngine;
 
-namespace BehTree.DataStorage.Storageables
+namespace Jrpg.DataStorage.Storageables
 {
     [Serializable]
     public class SpawnableStorageable : IStorageable

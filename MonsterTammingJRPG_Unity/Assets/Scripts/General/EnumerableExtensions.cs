@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BehTree.General
+namespace Jrpg.General
 {
     public static class EnumerableExtensions
     {

@@ -1,4 +1,4 @@
-﻿namespace BehTree.Interfaces
+﻿namespace Jrpg.Interfaces
 {
     public interface IStorageable
     {

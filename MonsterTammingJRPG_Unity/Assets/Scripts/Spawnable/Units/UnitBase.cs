@@ -1,11 +1,11 @@
 ﻿using System.Linq;
-using BehTree.General;
-using BehTree.Interfaces;
 using Cysharp.Threading.Tasks;
+using Jrpg.General;
+using Jrpg.Interfaces;
 using UnityEngine;
 using Zenject;
 
-namespace BehTree.Spawnable.Units
+namespace Jrpg.Spawnable.Units
 {
     public class UnitBase : SceneSpawnable
     {

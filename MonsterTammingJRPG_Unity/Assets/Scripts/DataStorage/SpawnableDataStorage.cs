@@ -1,7 +1,7 @@
-﻿using BehTree.DataStorage.Storageables;
+﻿using Jrpg.DataStorage.Storageables;
 using UnityEngine;
 
-namespace BehTree.DataStorage
+namespace Jrpg.DataStorage
 {
     [CreateAssetMenu(fileName = "SpawnableDataStorage", menuName = "Config/SpawnableDataStorage", order = 0)]
     public class SpawnableDataStorage : DataStorageBase<SpawnableStorageable>

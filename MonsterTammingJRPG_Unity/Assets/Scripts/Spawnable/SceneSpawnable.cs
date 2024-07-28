@@ -1,8 +1,8 @@
-﻿using BehTree.Interfaces;
-using Cysharp.Threading.Tasks;
+﻿using Cysharp.Threading.Tasks;
+using Jrpg.Interfaces;
 using UnityEngine;
 
-namespace BehTree.Spawnable
+namespace Jrpg.Spawnable
 {
     public abstract class SceneSpawnable : MonoBehaviour, ISpawnable
     {

@@ -1,6 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 
-namespace BehTree.Spawnable.Units
+namespace Jrpg.Spawnable.Units
 {
     public class UnitAnimation : SceneSpawnable
     {

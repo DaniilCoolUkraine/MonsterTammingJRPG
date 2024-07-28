@@ -1,6 +1,6 @@
-﻿using BehTree.DataStorage;
+﻿using Jrpg.DataStorage;
 
-namespace BehTree.Interfaces
+namespace Jrpg.Interfaces
 {
     public interface IRuntimeDataProvider
     {

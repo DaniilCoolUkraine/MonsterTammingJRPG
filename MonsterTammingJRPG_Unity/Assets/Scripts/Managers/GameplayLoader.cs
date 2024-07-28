@@ -1,11 +1,11 @@
-﻿using BehTree.DataStorage;
-using BehTree.DataStorage.Storageables;
-using BehTree.Interfaces;
-using BehTree.Spawners;
+﻿using Jrpg.DataStorage;
+using Jrpg.DataStorage.Storageables;
+using Jrpg.Interfaces;
+using Jrpg.Spawners;
 using UnityEngine;
 using Zenject;
 
-namespace BehTree.Managers
+namespace Jrpg.Managers
 {
     public class GameplayLoader : MonoBehaviour
     {

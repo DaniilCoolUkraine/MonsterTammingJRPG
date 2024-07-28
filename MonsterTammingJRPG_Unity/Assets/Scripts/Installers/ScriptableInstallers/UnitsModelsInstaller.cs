@@ -1,8 +1,8 @@
-﻿using BehTree.DataStorage;
+﻿using Jrpg.DataStorage;
 using UnityEngine;
 using Zenject;
 
-namespace BehTree.Installers.ScriptableInstallers
+namespace Jrpg.Installers.ScriptableInstallers
 {
     [CreateAssetMenu(fileName = "UnitsModelsInstaller", menuName = "Installers/ModelDataStorage", order = 0)]
     public class UnitsModelsInstaller : ScriptableObjectInstaller

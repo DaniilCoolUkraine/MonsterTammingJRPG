@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
-using BehTree.DataStorage;
-using BehTree.DataStorage.Storageables;
-using BehTree.Interfaces;
 using Cysharp.Threading.Tasks;
+using Jrpg.DataStorage;
+using Jrpg.DataStorage.Storageables;
+using Jrpg.Interfaces;
 using UnityEngine;
 using Zenject;
 
-namespace BehTree.Spawners
+namespace Jrpg.Spawners
 {
     public class SpawnerBase : ISpawner<SpawnableDataStorage, SpawnableStorageable>
     {

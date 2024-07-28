@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BehTree.Core.EventBus.Bindings
+namespace Jrpg.Core.EventBus.Bindings
 {
     public interface IEventBinding<T>
     {
