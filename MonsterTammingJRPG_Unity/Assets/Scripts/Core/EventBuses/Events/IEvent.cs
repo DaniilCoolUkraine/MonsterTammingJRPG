@@ -1,4 +1,4 @@
-﻿namespace Jrpg.Core.EventBus
+﻿namespace Jrpg.Core.EventBuses.Events
 {
     public interface IEvent
     {

@@ -1,9 +1,32 @@
 ﻿using System;
+using Jrpg.Core.EventBuses.Events;
 
-namespace Jrpg.Core.EventBus.Bindings
+namespace Jrpg.Core.EventBuses.Bindings
 {
-    public abstract class EventBinding<T> : IEventBinding<T> where T : IEvent
+    public class EventBinding<T> : IEventBinding<T> where T : IEvent
     {
+        public class Builder
+        {
+            private EventBinding<T> _binding = new(() => { });
+            
+            public Builder WithAction(Action<T> action)
+            {
+                _binding.Add(action);
+                return this;
+            }
+
+            public Builder WithAction(Action action)
+            {
+                _binding.Add(action);
+                return this;
+            }
+
+            public EventBinding<T> Build()
+            {
+                return _binding;
+            }
+        }
+        
         private Action<T> _onEvent = _ => { };
         private Action _onEventNoArgs = () => { };
 

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jrpg.Core.EventBus.Bindings
+namespace Jrpg.Core.EventBuses.Bindings
 {
     public interface IEventBinding<T>
     {
