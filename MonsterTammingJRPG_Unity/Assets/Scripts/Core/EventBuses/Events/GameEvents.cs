@@ -1,30 +1,26 @@
-﻿using UnityEngine;
+﻿using Jrpg.Spawnable.Units;
 
 namespace Jrpg.Core.EventBuses.Events
 {
-    public class TestEvent : IEvent
+    public class UnitSpawnedEvent : IEvent
     {
-    }
+        public UnitBase Unit { get; protected set; }
 
-    public class PlayerSpawnedEvent : IEvent
-    {
-        public Transform Transform { get; protected set; }
-
-        protected PlayerSpawnedEvent()
+        protected UnitSpawnedEvent()
         {
         }
-        
+
         public class Builder
         {
-            private PlayerSpawnedEvent _event = new PlayerSpawnedEvent();
-            
-            public Builder WithTransform(Transform transform)
+            private UnitSpawnedEvent _event = new UnitSpawnedEvent();
+
+            public Builder WithUnit(UnitBase unit)
             {
-                _event.Transform = transform;
+                _event.Unit = unit;
                 return this;
             }
 
-            public PlayerSpawnedEvent Build()
+            public UnitSpawnedEvent Build()
             {
                 return _event;
             }

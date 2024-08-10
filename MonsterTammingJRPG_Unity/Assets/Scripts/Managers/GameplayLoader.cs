@@ -22,14 +22,7 @@ namespace Jrpg.Managers
 
         private async void Start()
         {
-            var unitsSpawned = await _unitSpawner.Spawn(new[] { 0, 1, 2, 2, 2 });
-
-            // here is shit
-            // K in spawner is storageable so i need to find another way to get spawned elements
-            foreach (var unit in unitsSpawned)
-            {
-                
-            }
+            await _unitSpawner.Spawn(new[] { 0, 1, 2, 2, 2 });
         }
     }
 }

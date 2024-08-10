@@ -1,5 +1,7 @@
 ﻿using System.Linq;
 using Cysharp.Threading.Tasks;
+using Jrpg.Core.EventBuses;
+using Jrpg.Core.EventBuses.Events;
 using Jrpg.General;
 using Jrpg.Interfaces;
 using UnityEngine;
@@ -36,7 +38,17 @@ namespace Jrpg.Spawnable.Units
                 Debug.LogError($"cant find model for id {id}");
             }
 
+            SendEvent();
+            
             return true;
+        }
+
+        private void SendEvent()
+        {
+            var builder = new UnitSpawnedEvent.Builder();
+            var @event = builder.WithUnit(this).Build();
+
+            EventBus<UnitSpawnedEvent>.Publish(@event);
         }
     }
 }
