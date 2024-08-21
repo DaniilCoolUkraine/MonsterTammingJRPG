@@ -3,12 +3,13 @@ using Cysharp.Threading.Tasks;
 using Jrpg.DataStorage;
 using Jrpg.DataStorage.Storageables;
 using Jrpg.Interfaces;
+using Jrpg.Spawnable.Units;
 using UnityEngine;
 using Zenject;
 
 namespace Jrpg.Spawners
 {
-    public class SpawnerBase : ISpawner<SpawnableDataStorage, SpawnableStorageable>
+    public class UnitSpawner : ISpawner<SpawnableDataStorage, SpawnableStorageable, UnitBase>
     {
         private SpawnableDataStorage _spawnableStorage;
         private DiContainer _container;
@@ -19,9 +20,9 @@ namespace Jrpg.Spawners
             _container = container;
         }
 
-        public async UniTask<IEnumerable<SpawnableStorageable>> Spawn(IEnumerable<int> requestedIds)
+        public async UniTask<IEnumerable<UnitBase>> Spawn(IEnumerable<int> requestedIds)
         {
-            var instantiatedElements = new List<SpawnableStorageable>();
+            var instantiatedElements = new List<UnitBase>();
             
             foreach (var id in requestedIds)
             {
@@ -29,7 +30,7 @@ namespace Jrpg.Spawners
                 {
                     var instantiated = _container.InstantiatePrefab(storageable.Spawnable).GetComponent<ISpawnable>();
                     await instantiated.Spawn(id);
-                    instantiatedElements.Add(instantiated as SpawnableStorageable);
+                    instantiatedElements.Add(instantiated as UnitBase);
                 }
                 else
                 {

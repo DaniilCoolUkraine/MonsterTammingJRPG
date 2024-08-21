@@ -5,9 +5,9 @@ using Zenject;
 
 namespace Jrpg.Interfaces
 {
-    public interface ISpawner <T, K> where T : DataStorageBase<K> where K : IStorageable
+    public interface ISpawner <TStorage, TStorageable, TSpawnable> where TStorage : DataStorageBase<TStorageable> where TStorageable : IStorageable where TSpawnable : ISpawnable
     {
-        public void Init(T dataStorage, DiContainer container);
-        public UniTask<IEnumerable<K>> Spawn(IEnumerable<int> requestedIds);
+        public void Init(TStorage dataStorage, DiContainer container);
+        public UniTask<IEnumerable<TSpawnable>> Spawn(IEnumerable<int> requestedIds);
     }
 }

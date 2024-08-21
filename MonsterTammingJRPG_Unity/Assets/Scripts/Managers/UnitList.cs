@@ -17,6 +17,8 @@ namespace Jrpg.Managers
         
         private void Awake()
         {
+            _spawnedUnits = new List<UnitBase>();
+            
             var playerSpawnedEventBuilder = new EventBinding<UnitSpawnedEvent>.Builder();
             _playerSpawnedEvent = playerSpawnedEventBuilder.WithAction(OnPlayerSpawned).Build();
 
