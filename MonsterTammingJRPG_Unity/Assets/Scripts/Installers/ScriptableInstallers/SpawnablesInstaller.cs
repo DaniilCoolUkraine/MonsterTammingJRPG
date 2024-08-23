@@ -1,4 +1,4 @@
-﻿using Jrpg.DataStorage;
+﻿using Jrpg.GameCore.Extendables.ConcreteStorages;
 using UnityEngine;
 using Zenject;
 

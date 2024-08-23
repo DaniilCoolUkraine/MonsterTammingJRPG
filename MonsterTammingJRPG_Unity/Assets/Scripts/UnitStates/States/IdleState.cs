@@ -1,5 +1,5 @@
-﻿using Jrpg.Enums;
-using Jrpg.Interfaces;
+﻿using Jrpg.GameCore.Core.Interfaces;
+using Jrpg.GameCore.Extendables.Enums;
 
 namespace Jrpg.UnitStates.States
 {

@@ -1,6 +1,6 @@
-﻿using Jrpg.Enums;
-using Jrpg.General;
-using Jrpg.Interfaces;
+﻿using Jrpg.GameCore.Core.Interfaces;
+using Jrpg.GameCore.Extendables.Enums;
+using Jrpg.GameCore.Extendables.General;
 using UnityEngine;
 
 namespace Jrpg.UnitStates.States

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Jrpg.Core.EventBuses;
-using Jrpg.Core.EventBuses.Bindings;
-using Jrpg.Core.EventBuses.Events;
-using Jrpg.Interfaces;
+using Jrpg.GameCore.Core.EventBuses;
+using Jrpg.GameCore.Core.EventBuses.Bindings;
+using Jrpg.GameCore.Core.Interfaces;
+using Jrpg.GameCore.Extendables.Events;
 using Jrpg.Spawnable.Units;
 using UnityEngine;
 

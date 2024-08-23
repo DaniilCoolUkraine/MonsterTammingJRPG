@@ -1,6 +1,6 @@
-﻿using Jrpg.DataStorage;
-using Jrpg.DataStorage.Storageables;
-using Jrpg.Interfaces;
+﻿using Jrpg.GameCore.Core.Interfaces;
+using Jrpg.GameCore.Extendables.ConcreteStorages;
+using Jrpg.GameCore.Extendables.Storageables;
 using Jrpg.Spawnable.Units;
 using Jrpg.Spawners;
 using UnityEngine;

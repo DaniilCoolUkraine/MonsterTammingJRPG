@@ -1,4 +1,4 @@
-﻿using Jrpg.Interfaces;
+﻿using Jrpg.GameCore.Core.Interfaces;
 using Jrpg.RuntimeData;
 using UnityEngine;
 using Zenject;

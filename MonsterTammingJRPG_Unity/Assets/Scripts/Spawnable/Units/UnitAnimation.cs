@@ -1,6 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
-using Jrpg.Enums;
-using Jrpg.Interfaces;
+using Jrpg.GameCore.Core.Interfaces;
+using Jrpg.GameCore.Extendables.Enums;
 using UnityEngine;
 
 namespace Jrpg.Spawnable.Units

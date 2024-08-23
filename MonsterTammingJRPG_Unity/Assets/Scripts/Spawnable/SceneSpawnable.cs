@@ -1,5 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
-using Jrpg.Interfaces;
+using Jrpg.GameCore.Core.Interfaces;
 using UnityEngine;
 
 namespace Jrpg.Spawnable

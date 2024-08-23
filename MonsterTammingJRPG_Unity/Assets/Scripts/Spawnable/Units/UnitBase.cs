@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using Cysharp.Threading.Tasks;
-using Jrpg.Core.EventBuses;
-using Jrpg.Core.EventBuses.Events;
-using Jrpg.General;
-using Jrpg.Interfaces;
+using Jrpg.GameCore.Core.EventBuses;
+using Jrpg.GameCore.Core.Interfaces;
+using Jrpg.GameCore.Extendables.Events;
+using Jrpg.GameCore.Extendables.General;
 using Jrpg.UnitStates;
 using UnityEngine;
 using Zenject;
