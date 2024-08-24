@@ -228,7 +228,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -317,6 +317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4145413194d44bf39b289166c0670d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _unitStorage: {fileID: 11400000, guid: c8ac7ceadbbdaed408a6e13264420ef8, type: 2}
+  _unitsModelsStorage: {fileID: 11400000, guid: 8105a58f75687234ab92192e7890b554, type: 2}
 --- !u!114 &960155912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,9 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObjectInstallers:
-  - {fileID: 11400000, guid: 931bb9dd5216530488f29dc190e609fb, type: 2}
-  - {fileID: 11400000, guid: f17eacce114702c479b292cad5b4d73a, type: 2}
+  _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 255218969}
   _installerPrefabs: []

@@ -3,7 +3,7 @@ using Jrpg.RuntimeData;
 using UnityEngine;
 using Zenject;
 
-namespace Jrpg.Installers.MonoInstallers
+namespace Jrpg.Installers
 {
     public class RuntimeDataInstaller : MonoInstaller
     {

@@ -23,7 +23,7 @@ namespace Jrpg.Managers
 
         private async void Start()
         {
-            await _unitSpawner.Spawn(new[] { 0, 1, 2, 2, 2 });
+            await _unitSpawner.Spawn(new[] { 0, 0, 1, 1, 2 });
         }
     }
 }
