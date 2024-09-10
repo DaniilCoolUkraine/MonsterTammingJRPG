@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102885552463764053}
   - component: {fileID: 5926156033780174735}
+  - component: {fileID: -2529994046266932491}
   m_Layer: 0
   m_Name: BlackWolfUnit
   m_TagString: Untagged
@@ -44,3 +45,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa6d25150c641c9ba7e91fcba6bc579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateMachine: {fileID: -2529994046266932491}
+--- !u!114 &-2529994046266932491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731824062856100258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6749d69bde1241a4aa783eb99db38369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isMoving: 0

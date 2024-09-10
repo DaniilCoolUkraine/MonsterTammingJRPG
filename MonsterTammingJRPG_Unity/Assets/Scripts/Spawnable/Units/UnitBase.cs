@@ -2,9 +2,9 @@
 using Cysharp.Threading.Tasks;
 using Jrpg.GameCore.Core.EventBuses;
 using Jrpg.GameCore.Core.Interfaces;
+using Jrpg.GameCore.Extendables.ConcreteStateMachine;
 using Jrpg.GameCore.Extendables.Events;
 using Jrpg.GameCore.Extendables.General;
-using Jrpg.UnitStates;
 using UnityEngine;
 using Zenject;
 
@@ -12,15 +12,11 @@ namespace Jrpg.Spawnable.Units
 {
     public class UnitBase : SceneSpawnable
     {
+        [SerializeField] private CharacterStateMachine _stateMachine;
+        
         [Inject] private IRuntimeDataProvider _runtimeDataProvider;
 
         public IAnimationController Animation { get; protected set; }
-        public IStateController StateController { get; protected set; }
-
-        private void Update()
-        {
-            StateController.CurrentState?.Update();
-        }
 
         public override async UniTask<bool> Spawn(int id)
         {
@@ -30,12 +26,17 @@ namespace Jrpg.Spawnable.Units
 
         private async UniTask<bool> Init(int id)
         {
-            InitStateMachine();
             await InitAnimation(id);
 
             SendEvent();
+            InitStateMachine(Animation.Animator);
 
             return true;
+        }
+
+        private void InitStateMachine(Animator animator)
+        {
+            _stateMachine.Init(animator);
         }
 
         private async UniTask InitAnimation(int id)
@@ -50,11 +51,6 @@ namespace Jrpg.Spawnable.Units
             {
                 Debug.LogError($"cant find model for id {id}");
             }
-        }
-
-        private void InitStateMachine()
-        {
-            StateController = new UnitStateController();
         }
 
         private void SendEvent()

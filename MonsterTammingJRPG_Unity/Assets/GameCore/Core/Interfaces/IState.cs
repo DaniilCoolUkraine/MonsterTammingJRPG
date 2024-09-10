@@ -2,6 +2,9 @@
 {
     public interface IState
     {
-        public bool Update();
+        void OnEnter();
+        void OnExit();
+        void Update();
+        void FixedUpdate();
     }
 }

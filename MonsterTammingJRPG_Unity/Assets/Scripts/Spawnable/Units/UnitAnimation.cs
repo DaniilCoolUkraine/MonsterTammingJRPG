@@ -10,7 +10,9 @@ namespace Jrpg.Spawnable.Units
         [SerializeField] private Animator _animator;
 
         private EAnimationState _currentState;
-        
+
+        public Animator Animator => _animator;
+
         public override async UniTask<bool> Spawn(int id)
         {
             throw new System.NotImplementedException();

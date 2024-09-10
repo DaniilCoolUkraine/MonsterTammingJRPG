@@ -1,6 +1,5 @@
 ﻿using System;
 using Jrpg.GameCore.Core.Interfaces;
-using Jrpg.Movement;
 using UnityEngine;
 
 namespace Jrpg.InputControls

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6472856362010895992}
   - component: {fileID: 8349680232116140774}
   - component: {fileID: -2420292774252517870}
+  - component: {fileID: -4217016013847634235}
   m_Layer: 0
   m_Name: BunnyUnit
   m_TagString: Untagged
@@ -75,6 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aa6d25150c641c9ba7e91fcba6bc579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stateMachine: {fileID: -4217016013847634235}
 --- !u!114 &-6472856362010895992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,3 +117,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 7471875368392313167}
   _movementSpeed: 1
+--- !u!114 &-4217016013847634235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6178721432402117740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6749d69bde1241a4aa783eb99db38369, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isMoving: 0
