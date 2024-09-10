@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 5348429189093309385}
   - component: {fileID: 117150395161187365}
   - component: {fileID: 563940067125343201}
-  - component: {fileID: 4988035682342307610}
+  - component: {fileID: 1546319996885363683}
   m_Layer: 0
   m_Name: BunnyModel
   m_TagString: Untagged
@@ -702,7 +702,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.39870587, y: 1.1806892}
   m_Size: {x: 3.228569, y: 2.64995}
   m_Direction: 1
---- !u!114 &4988035682342307610
+--- !u!114 &1546319996885363683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -711,10 +711,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 117150395161187363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae463d4131344a4963d223b306653c4, type: 3}
+  m_Script: {fileID: 11500000, guid: e70c92e559cd4e8bab0a71778f751c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 117150395161187365}
 --- !u!1 &188064519148664878
 GameObject:
   m_ObjectHideFlags: 0

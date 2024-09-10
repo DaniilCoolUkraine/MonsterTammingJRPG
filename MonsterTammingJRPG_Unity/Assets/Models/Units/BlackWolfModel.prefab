@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 7245924172506157425}
   - component: {fileID: 3393446993597103773}
   - component: {fileID: 2982584885388269913}
-  - component: {fileID: 4421723624301388437}
+  - component: {fileID: 615263579032026211}
   m_Layer: 0
   m_Name: BlackWolfModel
   m_TagString: Untagged
@@ -472,7 +472,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.47122893, y: 1.5993047}
   m_Size: {x: 6.6835365, y: 3.705357}
   m_Direction: 1
---- !u!114 &4421723624301388437
+--- !u!114 &615263579032026211
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -481,10 +481,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3393446993597103771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ae463d4131344a4963d223b306653c4, type: 3}
+  m_Script: {fileID: 11500000, guid: e70c92e559cd4e8bab0a71778f751c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 3393446993597103773}
 --- !u!1 &3393446993826080843
 GameObject:
   m_ObjectHideFlags: 0

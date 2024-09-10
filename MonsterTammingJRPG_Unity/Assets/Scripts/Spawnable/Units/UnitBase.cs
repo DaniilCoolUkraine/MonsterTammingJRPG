@@ -16,7 +16,7 @@ namespace Jrpg.Spawnable.Units
         
         [Inject] private IRuntimeDataProvider _runtimeDataProvider;
 
-        public IAnimationController Animation { get; protected set; }
+        public Animator Animator { get; protected set; }
 
         public override async UniTask<bool> Spawn(int id)
         {
@@ -29,7 +29,7 @@ namespace Jrpg.Spawnable.Units
             await InitAnimation(id);
 
             SendEvent();
-            InitStateMachine(Animation.Animator);
+            InitStateMachine(Animator);
 
             return true;
         }
@@ -45,7 +45,7 @@ namespace Jrpg.Spawnable.Units
             {
                 var modelInstantiateProcess = InstantiateAsync(model.Spawnables.Random(), transform);
                 await modelInstantiateProcess;
-                Animation = modelInstantiateProcess.Result.FirstOrDefault() as IAnimationController;
+                Animator = modelInstantiateProcess.Result.FirstOrDefault()?.GetComponent<Animator>();
             }
             else
             {

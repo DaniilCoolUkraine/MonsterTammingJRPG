@@ -15,11 +15,11 @@ MonoBehaviour:
   _storageables:
   - <ID>k__BackingField: 0
     <Spawnables>k__BackingField:
-    - {fileID: 4421723624301388437, guid: 94d855cd30a54134f88efc35d8913d90, type: 3}
+    - {fileID: 615263579032026211, guid: 94d855cd30a54134f88efc35d8913d90, type: 3}
   - <ID>k__BackingField: 1
     <Spawnables>k__BackingField:
-    - {fileID: 8974816023571928009, guid: d1064c9ceb15d7846a6f45db33c17870, type: 3}
+    - {fileID: -7703061246497825953, guid: d1064c9ceb15d7846a6f45db33c17870, type: 3}
   - <ID>k__BackingField: 2
     <Spawnables>k__BackingField:
-    - {fileID: 4988035682342307610, guid: b8ed0a5acd3620a4880797b9941d64b6, type: 3}
-    - {fileID: 107436354558706959, guid: 194feaacb5a009e4aaee5237665a3dfb, type: 3}
+    - {fileID: 1546319996885363683, guid: b8ed0a5acd3620a4880797b9941d64b6, type: 3}
+    - {fileID: 1097399046649600476, guid: 194feaacb5a009e4aaee5237665a3dfb, type: 3}
