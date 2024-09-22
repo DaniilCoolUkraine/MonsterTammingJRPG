@@ -27,9 +27,9 @@ namespace Jrpg.Spawnable.Units
         private async UniTask<bool> Init(int id)
         {
             await InitAnimation(id);
+            InitStateMachine(Animator);
 
             SendEvent();
-            InitStateMachine(Animator);
 
             return true;
         }
